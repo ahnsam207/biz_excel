@@ -10,7 +10,7 @@ BRANCH = "main"  # 사용할 브랜치
 
 st.title("비즈니스엑셀 수업 자료 제출")
 # 파일 업로드
-uploaded_file = st.file_uploader(" 계획서 파일을 업로드하세요")
+uploaded_file = st.file_uploader("파일을 업로드하세요")
 
 if uploaded_file is not None:
     file_content = uploaded_file.getvalue()
