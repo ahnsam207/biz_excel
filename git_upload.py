@@ -7,6 +7,15 @@ GITHUB_REPO = "ahnsam207/biz_excel"
 GITHUB_TOKEN =  st.secrets["git_token"]   # 개인 액세스 토큰 입력
 BRANCH = "main"  # 사용할 브랜치
 
+st.set_page_config(page_title="My App", page_icon=":smiley:", layout="wide")
+
+# CSS를 사용하여 공유 아이콘 숨기기
+hide_streamlit_style = """
+            <style>
+            .css-1d391kg {display: none;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 st.title("비즈니스엑셀 수업 자료 제출")
 # 파일 업로드
