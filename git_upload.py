@@ -2,16 +2,6 @@ import streamlit as st
 import requests
 import base64
 
-# GitHub 아이콘을 표시하는 HTML 코드
-github_icon_html = """
-<a href="#" onclick="return false;">
-    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="width: 40px; height: 40px;">
-</a>
-"""
-
-# 스트림릿 앱에 HTML 코드 삽입
-st.markdown(github_icon_html, unsafe_allow_html=True)
-
 # GitHub 정보
 GITHUB_REPO = "ahnsam207/biz_excel"
 GITHUB_TOKEN =  st.secrets["git_token"]   # 개인 액세스 토큰 입력
