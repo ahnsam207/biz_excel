@@ -2,6 +2,18 @@ import streamlit as st
 import requests
 import base64
 
+st.set_page_config(
+    page_title="My App",
+    page_icon="🚀",
+    layout="wide",
+    initial_sidebar_state="expanded",
+    menu_items={
+        'Get Help': None,
+        'Report a bug': None,
+        'About': None
+    }
+)
+
 # GitHub 정보
 GITHUB_REPO = "ahnsam207/biz_excel"
 GITHUB_TOKEN =  st.secrets["git_token"]   # 개인 액세스 토큰 입력
