@@ -13,7 +13,7 @@ uploaded_file = st.file_uploader("파일을 업로드하세요")
 
 if uploaded_file is not None:
     file_content = uploaded_file.getvalue()
-    file_path = f"upload/class_5{uploaded_file.name}"
+    file_path = f"upload/class5/{uploaded_file.name}"
 
     # GitHub API URL
     url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{file_path}"
