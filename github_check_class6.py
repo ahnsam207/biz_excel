@@ -2,9 +2,9 @@ import streamlit as st
 import requests
 
 # GitHub 레포지토리 정보
-GITHUB_USER = 'ahnsam207'  # GitHub 사용자 이름
-REPO_NAME = 'biz_excel'      # 레포지토리 이름
-FOLDER_PATH = 'upload'        # 폴더 경로 (예: 'src' 또는 'docs')
+GITHUB_USER = st.secrets['user']  # GitHub 사용자 이름
+REPO_NAME = st.secrets['name']      # 레포지토리 이름
+FOLDER_PATH = st.secrets['path']        # 폴더 경로 (예: 'src' 또는 'docs')
 
 # GitHub API URL
 url = f'https://api.github.com/repos/{GITHUB_USER}/{REPO_NAME}/contents/{FOLDER_PATH}'
