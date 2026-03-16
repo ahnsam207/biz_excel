@@ -19,7 +19,7 @@ if response.status_code == 200:
     files = response.json()
     if isinstance(files, list):
         for file in files:
-            st.write(file['name'], end = "   ")
+            st.write(file['name'])
     else:
         st.write("폴더가 비어 있습니다.")
 else:
